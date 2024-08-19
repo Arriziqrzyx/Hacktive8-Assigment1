@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --bg-color: #f8f9fd;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+
+.profile-info {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.profile-picture {
+  max-width: 210px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .profile-picture {
+    max-width: 150px;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
